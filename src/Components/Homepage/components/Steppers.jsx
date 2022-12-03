@@ -1,8 +1,11 @@
+import { AnimationOnScroll } from "react-animation-on-scroll";
 export default function Stepper() {
   return (
     <div className="stepper-container">
         {/* <div> */}
-      <div className="step-1">
+
+        <AnimationOnScroll animateIn="animate__fadeIn animate__delay-1s">
+      <div className="step-1 ">
         <div className="brand-svg-circle">
           <img src="/assets/icons/icon-brand-recognition.svg" alt="brand" />
         </div>
@@ -12,10 +15,11 @@ export default function Stepper() {
           a thing. Branded links help instil confidence in you content
         </p>
         </div>
+        </AnimationOnScroll>
         {/* <div className="after"></div> */}
       {/* </div> */}
-
-      <div className="step-2">
+      <AnimationOnScroll animateIn="animate__fadeIn animate__delay-2s">
+      <div className="step-2 ">
         <div className="brand-svg-circle">
           <img src="/assets/icons/icon-detailed-records.svg" alt="brand" />
         </div>
@@ -24,7 +28,9 @@ export default function Stepper() {
           Gain insights into who is clicking your links. Knowing when and where people engage with your content helps infarm better decisions.
         </p>
       </div>
-      <div className="step-3">
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn="animate__fadeIn animate__delay-3s">
+      <div className="step-3 ">
         <div className="brand-svg-circle">
           <img src="/assets/icons/icon-fully-customizable.svg" alt="brand" />
         </div>
@@ -33,6 +39,7 @@ export default function Stepper() {
           improve brand awareness and content discoverability through customizable links, supercharging audience engagement. 
         </p>
       </div>
+      </AnimationOnScroll>
     </div>
   );
 }

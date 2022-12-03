@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Button, Snackbar, IconButton, TextField } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import 'animate.css';
 
 export default function Linkform() {
   // State container
@@ -69,7 +70,7 @@ export default function Linkform() {
   };
 
   return (
-    <div className="lniks-form-container">
+    <div className="lniks-form-container animate__animated animate__fadeInLeft animate__delay-2s">
       <div className="form-container">
         <img src="/assets/icons/bg-shorten-desktop.svg" alt="" />
         <div className="field-div">
@@ -94,7 +95,7 @@ export default function Linkform() {
       {links?.length
         ? links.map((item, index) => {
             return (
-              <div className="archived-link">
+              <div className="archived-link animate__animated animate__fadeInDown">
                 <p className="full-link">{item.fullLink}</p>
                 <div className="copy-text-div">
                   <p className="shorten-link">{item.shortenLink}</p>
